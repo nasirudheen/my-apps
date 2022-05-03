@@ -17,7 +17,7 @@ spec:
       source:
         repoURL: https://github.com/nasirudheen/my-apps.git 
         targetRevision: HEAD
-        path: '{{cluster.name}}'
+        path: 'apps/{{cluster.name}}'
       destination:
         name: 'apps/{{cluster.name}}'  # cluster is restricted
         server: '{{cluster.address}}'
