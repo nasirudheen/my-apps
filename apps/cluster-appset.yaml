@@ -30,7 +30,7 @@ spec:
               
         repoURL: https://github.com/nasirudheen/my-apps.git 
         targetRevision: main
-        path: 'apps/{{cluster.name}}'
+        path: 'apps/{{tenant.name}}'
 
       destination:
         name: '{{tenant.name}}'  # cluster is restricted
