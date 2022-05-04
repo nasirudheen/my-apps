@@ -14,9 +14,22 @@ spec:
       name: '{{cluster.name}}'
     spec:
       project: default 
+
+#      source:
+#        helm:
+#          valueFiles:
+#            - 'values.{{tenant.id}}.yaml'
+#        path: 'tenants/{{tenant.id}}'
+#        repoURL: 'https://github.com/xsreality/argocd-applicationset-demo.git'
+#        targetRevision: main
+
       source:
+        helm:
+          valueFiles:
+            - '{{cluster.name}}/values.yaml'
+              
         repoURL: https://github.com/nasirudheen/my-apps.git 
-        targetRevision: HEAD
+        targetRevision: main
         path: 'apps/{{cluster.name}}'
       destination:
         name: '{{cluster.name}}'  # cluster is restricted
