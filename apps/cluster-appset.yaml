@@ -35,6 +35,6 @@ spec:
         name: '{{cluster.name}}'  # cluster is restricted
         name: '{{cluster.name}}'  # cluster is restricted
 #        server: '{{cluster.address}}'
-        server: cluster2.org
+        server: https://192.168.122.11:6443
         namespace: default  # namespace is restricted
 
