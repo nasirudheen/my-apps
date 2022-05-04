@@ -30,13 +30,14 @@ spec:
               
         repoURL: https://github.com/nasirudheen/my-apps.git 
         targetRevision: HEAD
-#        path: 'apps/{{cluster.name}}'
-        path: apps/cluster2
+        path: 'apps/{{cluster.name}}'
 
       destination:
-#        name: '{{cluster.name}}'  # cluster is restricted
-        name: cluster2
+        name: '{{cluster.name}}'  # cluster is restricted
 #        server: '{{cluster.address}}'
         server: https://192.168.122.11:6443
         namespace: default  # namespace is restricted
-
+      syncPolicy:
+        syncOptions:
+        - CreateNamespace=true
+   
