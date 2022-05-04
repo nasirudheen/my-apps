@@ -36,7 +36,7 @@ spec:
         name: '{{tenant.name}}'  # cluster is restricted
 #        server: '{{cluster.address}}'
         server: https://192.168.122.11:6443
-        namespace: default  # namespace is restricted
+        namespace: testns  # namespace is restricted
       syncPolicy:
         syncOptions:
         - CreateNamespace=true
