@@ -14,15 +14,6 @@ spec:
       name: '{{tenant.name}}'
     spec:
       project: default 
-
-#      source:
-#        helm:
-#          valueFiles:
-#            - 'values.{{tenant.id}}.yaml'
-#        path: 'tenants/{{tenant.id}}'
-#        repoURL: 'https://github.com/xsreality/argocd-applicationset-demo.git'
-#        targetRevision: main
-
       source:
         helm:
           valueFiles:
