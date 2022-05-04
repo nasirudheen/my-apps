@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: appset-test
   # You'll usually want to add your resources to the argocd namespace.
-  namespace: argocd
+  namespace: testns
   # Add a this finalizer ONLY if you want these to cascade delete.
 spec:
   # The project the application belongs to.
@@ -14,7 +14,7 @@ spec:
     path: apps
   destination:
     server: "https://kubernetes.default.svc" 
-    namespace: argocd
+    namespace: testns
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
