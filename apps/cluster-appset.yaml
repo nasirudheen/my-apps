@@ -33,6 +33,8 @@ spec:
         path: 'apps/{{cluster.name}}'
       destination:
         name: '{{cluster.name}}'  # cluster is restricted
+        name: '{{cluster.name}}'  # cluster is restricted
 #        server: '{{cluster.address}}'
+        server: cluster2.org
         namespace: default  # namespace is restricted
 
