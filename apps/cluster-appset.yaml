@@ -31,11 +31,11 @@ spec:
         repoURL: https://github.com/nasirudheen/my-apps.git 
         targetRevision: HEAD
 #        path: 'apps/{{cluster.name}}'
-        path: apps/cluster2.org
+        path: apps/cluster
 
       destination:
 #        name: '{{cluster.name}}'  # cluster is restricted
-        name: cluster2.org
+        name: cluster2
 #        server: '{{cluster.address}}'
         server: https://192.168.122.11:6443
         namespace: default  # namespace is restricted
