@@ -29,7 +29,7 @@ spec:
             - '{{cluster.name}}/values.yaml'
               
         repoURL: https://github.com/nasirudheen/my-apps.git 
-        targetRevision: main
+        targetRevision: HEAD
         path: 'apps/{{cluster.name}}'
       destination:
         name: '{{cluster.name}}'  # cluster is restricted
