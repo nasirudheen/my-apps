@@ -6,7 +6,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/nasirudheen/my-argo.git 
-      revision: HEAD
+      revision: main
       files:
       - path: "apps/**/config.json"
   template:
@@ -29,7 +29,7 @@ spec:
             - 'values.yaml'
               
         repoURL: https://github.com/nasirudheen/my-apps.git 
-        targetRevision: HEAD
+        targetRevision: main
         path: 'apps/{{cluster.name}}'
 
       destination:
